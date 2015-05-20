@@ -1,0 +1,69 @@
+worker run
+parseCmdArg
+loadUserFile
+init
+readInput
+performSuperstep
+sent WM_BEGIN
+Receiver: bind: Address already in use
+Sender: connect: Connection refused
+Receiver: bind: Address already in use
+Sender: connect: Connection refused
+Receiver: accept all client success
+Sender: connect all server success
+received MW_BEGIN
+-----------------------------------------
+superstep: 0
+debug info:from 0 to 0
+debug info:out weight 1.000000
+debug info:send1.000000
+debug info:from 0 to 0
+debug info:out weight 1.000000
+debug info:send1.000000
+debug info:from 0 to 0
+debug info:out weight 1.000000
+debug info:send1.000000
+sent WW_NODEMSGLIST, 1 msgs to worker[3]
+sent WW_NODEMSGLIST, 1 msgs to worker[4]
+sent WW_FINISHSENDNODEMSG to worker[2]
+sent WW_FINISHSENDNODEMSG to worker[4]
+sent WW_FINISHSENDNODEMSG to worker[3]
+received all WW_NODEMSGLIST && WW_FINISHNODEMSG
+sent WM_CURSSFINISH
+received MW_NEXTSSSTART
+-----------------------------------------
+superstep: 1
+debug info:msg value 1
+debug info:msg value 65536
+debug info:msg value 65536
+debug info:msg value 65536
+sent WW_FINISHSENDNODEMSG to worker[2]
+sent WW_FINISHSENDNODEMSG to worker[3]
+sent WW_FINISHSENDNODEMSG to worker[4]
+received all WW_NODEMSGLIST && WW_FINISHNODEMSG
+sent WM_CURSSFINISH
+received MW_NEXTSSSTART
+-----------------------------------------
+superstep: 2
+debug info:msg value 2
+debug info:msg value 2
+sent WW_FINISHSENDNODEMSG to worker[2]
+sent WW_FINISHSENDNODEMSG to worker[3]
+sent WW_FINISHSENDNODEMSG to worker[4]
+received all WW_NODEMSGLIST && WW_FINISHNODEMSG
+sent WM_CURSSFINISH
+received MW_NEXTSSSTART
+-----------------------------------------
+superstep: 3
+debug info:msg value 3
+sent WW_FINISHSENDNODEMSG to worker[2]
+sent WW_FINISHSENDNODEMSG to worker[3]
+sent WW_FINISHSENDNODEMSG to worker[4]
+received all WW_NODEMSGLIST && WW_FINISHNODEMSG
+sent WM_CURSSFINISH
+received MW_END
+sent WM_END
+writeOutput
+terminate
+Receiver: closeAllSocket
+Sender: closeAllSocket
